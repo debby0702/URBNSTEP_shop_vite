@@ -1,0 +1,44 @@
+// css 變數：root, var (不能運算)
+// scss變數：$ (可運算)
+$practice-blue:rgb(35, 72, 255);
+
+h1{
+    color:$practice-blue;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    padding: 12px;
+
+    &:hover{
+    background-color: darken($practice-blue, 40%);
+    color: white;
+}
+}
+// 進階SCSS變數 【 運算 】  (var做不到)
+.box1{
+    background-color: lighten($practice-blue, 20%);
+}
+
+.box2{
+    background-color: $practice-blue;
+}
+
+.box3{
+    background-color: darken($practice-blue, 20%);
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    border: 2px solid $practice-blue;
+    margin-top: 12px;
+
+    h2{
+        font-size: 36px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
