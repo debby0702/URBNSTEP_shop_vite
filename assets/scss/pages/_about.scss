@@ -1,0 +1,32 @@
+.banner {
+    background-image: url(../assets/images/about/hero.png);
+
+    .h1{
+    padding: 150px 0;
+    color: var( --color-neutral-0);
+}
+}
+
+@media(max-width:576px) {
+    .banner{
+        background-image: url(../assets/images/about/hero-sm.png);
+    }
+}
+
+.block-quote{
+    border-radius: var(--radius-md);
+}
+
+
+.history-list{
+    list-style: disc;
+    
+    time{
+    border-right: 1px solid var(--color-neutral-900);
+    }
+}
+
+
+.brand-concept-list li{
+    border-left: 3px solid var(--color-neutral-300);
+}

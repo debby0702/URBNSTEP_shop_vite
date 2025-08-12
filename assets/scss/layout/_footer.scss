@@ -1,4 +1,16 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+    text-align: center;
+    background-color: var(--color-neutral-100);
+    color: var(--color-neutral-600);
+}
+.footer p + p{
+    margin-top: 4px;
+}
+
+.footer-menu a{
+ color: var(--color-neutral-900);
+}
+
+.line-b{
+    border-bottom: 1px solid var(--color-neutral-300);
 }

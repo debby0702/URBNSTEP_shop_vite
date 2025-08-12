@@ -1,0 +1,100 @@
+/* btn */
+.btn{
+    padding: 12px 24px;
+    border-radius: var(--radius-sm);
+    color: var(--color-neutral-900 );
+    line-height: 1.5;
+    /* 清空樣式 */
+    border: none;
+    background-color: transparent;
+    /* 游標 */
+    cursor: pointer;
+}
+
+
+.btn-primary-filled{
+    background-color: var(--color-primary-300);
+}
+.btn-neutral-filled{
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral-0);
+}
+.btn-neutral-filled:hover, .btn-neutral-outlined:hover{
+    background-color: var(--color-neutral-700);
+    color: var(--color-neutral-0);
+}
+.btn-neutral-filled:focus, .btn-neutral-outlined:focus{
+    box-shadow: 0 0 0 3px #21252910;
+}
+.btn-neutral-outlined{
+    border:1px solid var(--color-neutral-900);
+}
+.option-text-only{
+    border:1px solid var(--color-neutral-300);
+}
+.option-text-only:hover{
+    border:1px solid var(--color-neutral-600);
+}
+.option-text-only:focus{
+    border:1px solid var(--color-neutral-900);
+}
+
+.option-img-n-text{
+    border: none;
+    background-color: transparent;
+}
+.option-img-n-text:hover img, .card-product img{
+    opacity: 0.8;
+}
+.option-img-n-text:focus img{
+    border: 1px solid var(--color-neutral-900);
+}
+.option-img-n-text:focus{
+    color: var(--color-neutral-900);
+}
+@media(max-width:576px) {
+    .btn-sm{
+    padding: 8px 12px;
+    }
+}
+
+
+/* link */
+.link-primary{
+    color: var(--color-primary-400);
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    span{
+    border-bottom: 1px solid;
+    }
+
+    &:hover{
+    color: var(--color-primary-500);
+    }
+
+    &:focus span{
+    border-bottom: 2px solid;
+    }
+
+    &:disabled{
+    opacity: 40%;
+    }
+}
+
+/* disabled btn */
+.btn:disabled,.btn[disabled],
+.btn-sm:disabled, .btn-sm[disabled],
+.btn-neutral-outlined:disabled, .btn-neutral-outlined[disabled],
+.option-text-only:disabled, .option-text-only[disabled],
+.option-img-n-text:disabled, .option-img-n-text[disabled]{
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.btn:disabled:hover, .btn-sm:disabled:hover, 
+.btn-neutral-outlined:disabled:hover,
+.option-text-only:disabled:hover,
+.option-img-n-text:disabled:hover {
+  background-color: transparent;
+}

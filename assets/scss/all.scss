@@ -12,9 +12,28 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 // @import "bootstrap/scss/functions";
 
-@import "./reset";
-@import "./variables";
+@import "./base/reset";
+
+// 變數、通用樣式
+@import "./helper/variables";
+@import "./helper/utils";
+
+// 第三方套件(ex:bootstrp)
+
+// base
+@import "./base/base";
+
+// components
+@import "./components/btn";
+
+// layout
 @import "./layout/_containers";
-@import "./layout/footer";
-@import "./layout/header";
-@import "./layout/nav"
+@import "./layout/columns";
+@import "./layout/_footer";
+@import "./layout/_header";
+@import "./layout/_nav";
+
+// pages
+@import "./pages/_index";
+@import "./pages/_about";
+@import "./pages/_products";

@@ -1,0 +1,88 @@
+/* font_notoSans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--color-neutral-900);
+    /* 預設就是fw400 */
+}
+.display1{
+    font-size: 64px;
+}
+
+.display2{
+    font-size: 48px;
+}
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6,
+.display1, .display2 {
+    line-height: 120%;
+    font-weight: 700;
+}
+
+h1, .h1 {
+    font-size: 40px;
+}
+
+h2, .h2 {
+    font-size: 32px;
+}
+
+h3, .h3 {
+    font-size: 28px;
+}
+
+h4, .h4 {
+    font-size: 24px;
+}
+
+h5, .h5 {
+    font-size: 20px;
+}
+h6, .h6{
+    font-size: 16px;
+}
+
+.font-label-md, .btn{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.font-p-lg {
+    font-size: 20px;
+}
+
+.font-p-md {
+    font-size: 16px;
+}
+
+.font-p-sm {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.font-p-xs {
+    font-size: 12px;
+}
+
+@media(max-width:576px) {
+    .display2-sm{
+        font-size: 48px;
+    }
+    .h3-sm {
+    font-size: 28px;
+    }
+
+    .h4-sm {
+        font-size: 24px;
+    }
+
+    .h5-sm {
+        font-size: 20px;
+    }
+    .h6-sm {
+        font-size: 16px;
+    }
+}
