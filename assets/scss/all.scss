@@ -17,6 +17,8 @@
 // 變數、通用樣式
 @import "./helper/variables";
 @import "./helper/utils";
+@import "./helper/_containers";
+@import "./helper/columns";
 
 // 第三方套件(ex:bootstrp)
 
@@ -24,11 +26,11 @@
 @import "./base/base";
 
 // components
+@import "./components/breadcrumb";
 @import "./components/btn";
 
 // layout
-@import "./layout/_containers";
-@import "./layout/columns";
+
 @import "./layout/_footer";
 @import "./layout/_header";
 @import "./layout/_nav";

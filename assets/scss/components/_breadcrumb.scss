@@ -1,0 +1,10 @@
+/* breadcrumb */
+.breadcrumb-item-link{
+    color: var(--color-neutral-600);
+
+    &::after {
+    content: "/";
+    margin-left: 12px;
+    margin-right: 12px;
+    }
+}

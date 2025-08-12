@@ -1,0 +1,30 @@
+// 這裡放標籤基本樣式
+
+/* font_notoSans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color: var(--color-neutral-900);
+    /* 預設就是fw400 */
+}
+
+/* 補充reset */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+a{
+	display: block;
+    text-decoration: none;
+	color: var(--color-neutral-900);
+    font-weight: 500;
+}
