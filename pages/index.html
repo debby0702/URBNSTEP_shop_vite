@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>URBNSTEP</title>
   </head>
   <body>
     <!--給vite看的ejs語法： 路徑從根目錄開始、省略檔案類型.ejs (只有前面要dash) -->
     <%- include('./layout/nav'); -%>
 
     <header class="header banner">
-        <h1 class="mb-m display1 display2-sm color-neutral-0">URBNSTEP</h1>
-        <h3 class="mb-3xl h3 h5-sm color-neutral-0">Your Step, Your Statement</h3>
+        <h1 class="mb-m display1 mb-xs-md display2-md color-neutral-0">URBNSTEP</h1>
+        <h3 class="mb-3xl h3 mb-2xl-md h5-md color-neutral-0">Your Step, Your Statement</h3>
         <button class="btn btn-primary-filled" type="button">立即選購</button>
     </header>
     <main class="main">
-        <section class="container-lg py-5xl">
+        <section class="container-lg py-5xl py-2xl-md">
             <div class="text-align-center">
-                <h2 class="display2 mb-s">New Arrival</h2>
-                <h2 class="h2 mb-xl">新品上市</h2>
+                <h2 class="display2 h2-md mb-s mb-xs-md">New Arrival</h2>
+                <h2 class="h2 h4-md mb-xl mb-l-md">新品上市</h2>
             </div>
             <ul class="row">
-                <li class="col-6">
+                <li class="col-6 col-6-md">
                     <div class="card card-product"><a href="javascript:;">
-                            <img class="mb-s" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-1.png?raw=true"
+                            <img class="mb-s" src="../assets/images/index/new-1.png"
                                 alt="Monoverse">
                             <h5 class="h5 mb-xxs">Monoverse</h5>
                             <p class="font-label-md">NT$3,600</p>
                         </a></div>
                 </li>
-                <li class="col-6">
+                <li class="col-6 col-6-md">
                     <div class="card card-product"><a href="./products/platform404.html">
-                            <img class="mb-s" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-2.png?raw=true"
+                            <img class="mb-s" src="../assets/images/index/new-2.png"
                                 alt="PLATFORM 404">
                             <h5 class="h5 mb-xxs">PLATFORM 404</h5>
                             <p class="font-label-md">NT$2,600</p>
                         </a></div>
                 </li>
-                <li class="col-6">
+                <li class="col-6 col-6-md">
                     <div class="card card-product"><a href="javascript:;">
-                            <img class="mb-s" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-3.png?raw=true"
+                            <img class="mb-s" src="../assets/images/index/new-3.png"
                                 alt="URBN Force">
                             <h5 class="h5 mb-xxs">URBN Force</h5>
                             <p class="font-label-md">NT$3,200</p>
                         </a></div>
                 </li>
-                <li class="col-6">
+                <li class="col-6 col-6-md">
                     <div class="card card-product"><a href="javascript:;">
-                            <img class="mb-s" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/new-4.png?raw=true"
+                            <img class="mb-s" src="../assets/images/index/new-4.png"
                                 alt="Mode90">
                             <h5 class="h5 mb-xxs">Mode90</h5>
                             <p class="font-label-md">NT$4,000</p>
@@ -56,37 +56,39 @@
                 </li>
             </ul>
         </section>
-        <section class="container-lg py-5xl">
-            <h2 class="h2 mb-m">熱銷補貨</h2>
+        <section class="container-lg py-5xl py-2xl-md">
+            <h2 class="h2 h4-md mb-m">熱銷補貨</h2>
             <ul class="row">
                 <li class="col-3">
-                    <div class="card card-hot-product"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true" alt="熱銷商品"></div>
+                    <div class="card card-hot-product"><img src="../assets/images/products/product-3.png" alt="熱銷商品"></div>
                 </li>
                 <li class="col-3">
-                    <div class="card card-hot-product"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product.png?raw=true" alt="熱銷商品"></div>
+                    <div class="card card-hot-product"><img src="../assets/images/products/product.png" alt="熱銷商品"></div>
                 </li>
                 <li class="col-3">
-                    <div class="card card-hot-product"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-6.png?raw=true" alt="熱銷商品"></div>
+                    <div class="card card-hot-product"><img src="../assets/images/products/product-6.png" alt="熱銷商品"></div>
                 </li>
                 <li class="col-3">
-                    <div class="card card-hot-product"><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true" alt="熱銷商品"></div>
+                    <div class="card card-hot-product"><img src="../assets/images/products/product-4.png" alt="熱銷商品"></div>
                 </li>
             </ul>
         </section>
-        <section class="banner-co-branded mx-auto color-neutral-0 text-align-center">
+        <section class="banner-co-branded mx-auto color-neutral-0 text-align-center py-3xl py-m-md">
             <div class="d-flex mb-m justify-content-center">
                 <h2 class="display2 me-l">URBNSTEP</h2>
                 <h2 class="h1 color-primary-300 me-l">x</h2>
                 <h2 class="display2">Kevin Chen</h2>
             </div>
-            <h2 class="h2 mb-xl">跨界聯名，限量發售</h2>
+            <h2 class="h2 h4-md mb-xl">跨界聯名，限量發售</h2>
             <p class="font-p-lg color-neutral-500">新銳漫畫家 Kevin Chen 親自操刀設計，街頭能量全面引爆！</p>
         </section>
-        <section class="container-lg"></section>
-        <section class="container-lg"></section>
-        <section class="bg-color-primary-200 mt-2xl py-l d-flex justify-content-center align-items-center">
-            <h4 class="me-l">加入會員取得 9 折優惠</h4>
-            <button type="button" class="btn btn-neutral-filled btn-sm">馬上註冊</button>
+        <section class="container-lg py-5xl py-2xl-md">
+            <h2 class="h2 h4">依系列選購</h2>
+
+        </section>
+        <section class="container-lg py-5xl py-2xl-md">
+            <h2 class="h2 h4">穿搭靈感</h2>
+
         </section>
     </main>
 

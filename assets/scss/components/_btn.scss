@@ -1,8 +1,9 @@
 /* btn */
 .btn{
     padding: 12px 24px;
-    border-radius: var(--radius-sm);
-    color: var(--color-neutral-900 );
+    border-radius: $radius-sm;
+    color: $color-neutral-900;
+    font-family: "Noto Sans TC", sans-serif;
     line-height: 1.5;
     /* 清空樣式 */
     border: none;
@@ -13,30 +14,30 @@
 
 
 .btn-primary-filled{
-    background-color: var(--color-primary-300);
+    background-color: $color-primary-300;
 }
 .btn-neutral-filled{
-    background-color: var(--color-neutral-900);
-    color: var(--color-neutral-0);
+    background-color: $color-neutral-900;
+    color: $color-neutral-0;
 }
 .btn-neutral-filled:hover, .btn-neutral-outlined:hover{
-    background-color: var(--color-neutral-700);
-    color: var(--color-neutral-0);
+    background-color: $color-neutral-700;
+    color: $color-neutral-0;
 }
 .btn-neutral-filled:focus, .btn-neutral-outlined:focus{
     box-shadow: 0 0 0 3px #21252910;
 }
 .btn-neutral-outlined{
-    border:1px solid var(--color-neutral-900);
+    border:1px solid $color-neutral-900;
 }
 .option-text-only{
-    border:1px solid var(--color-neutral-300);
+    border:1px solid $color-neutral-300;
 }
 .option-text-only:hover{
-    border:1px solid var(--color-neutral-600);
+    border:1px solid $color-neutral-600;
 }
 .option-text-only:focus{
-    border:1px solid var(--color-neutral-900);
+    border:1px solid $color-neutral-900;
 }
 
 .option-img-n-text{
@@ -47,10 +48,10 @@
     opacity: 0.8;
 }
 .option-img-n-text:focus img{
-    border: 1px solid var(--color-neutral-900);
+    border: 1px solid $color-neutral-900;
 }
 .option-img-n-text:focus{
-    color: var(--color-neutral-900);
+    color: $color-neutral-900;
 }
 @media(max-width:576px) {
     .btn-sm{
@@ -61,7 +62,7 @@
 
 /* link */
 .link-primary{
-    color: var(--color-primary-400);
+    color: $color-primary-400;
     padding-top: 8px;
     padding-bottom: 8px;
 
@@ -70,7 +71,7 @@
     }
 
     &:hover{
-    color: var(--color-primary-500);
+    color: $color-primary-500;
     }
 
     &:focus span{

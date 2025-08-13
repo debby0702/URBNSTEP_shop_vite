@@ -12,6 +12,9 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 // @import "bootstrap/scss/functions";
 
+/* font_notoSans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
 @import "./base/reset";
 
 // 變數、通用樣式

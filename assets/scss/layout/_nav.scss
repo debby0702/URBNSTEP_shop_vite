@@ -1,6 +1,6 @@
 /* navigation */
 .nav a{
-    color: var(--color-neutral-900);
+    color: $color-neutral-900;
 }
 .log-in .btn{
     padding: 0;
@@ -31,10 +31,10 @@ display: none;
 }
 .nav-menu-mobile a{
     text-align: center; 
-    background-color: var(--color-primary-100);
+    background-color: $color-primary-100;
 }
 .nav-menu-mobile .active{
-    background-color: var(--color-primary-200);
+    background-color: $color-primary-200;
 }
 @media (max-width: 768px) {
     .nav-top{

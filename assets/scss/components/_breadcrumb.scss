@@ -1,6 +1,6 @@
 /* breadcrumb */
 .breadcrumb-item-link{
-    color: var(--color-neutral-600);
+    color: $color-neutral-600;
 
     &::after {
     content: "/";

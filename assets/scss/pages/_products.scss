@@ -1,0 +1,41 @@
+.sidebar-menu a{
+    color: $color-neutral-900;
+}
+
+.sidebar-menu .active{
+    color: $color-primary-400;
+}
+.products .title{
+    margin-bottom: 24px;
+}
+.products .card{
+    color: $color-neutral-900;
+}
+
+.card .card-title{
+    margin-bottom: 4px;
+}
+
+.page-item .btn{
+    padding: 8px 15px;
+    border-radius: 0;
+}
+.page-item .btn:hover{
+    background-color: $color-neutral-100;
+}
+
+.page-item .btn.active{
+    background-color: $color-primary-300;
+    font-weight: 500;
+}
+
+
+/* product-detail */
+.product-detail .col-6{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.product-detail .row{
+    margin-left: -4px;
+    margin-right: -4px;
+}
