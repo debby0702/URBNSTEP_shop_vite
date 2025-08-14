@@ -95,6 +95,7 @@ h6, .h6{
 .flex-wrap{
     flex-wrap: wrap;
 }
+
 .align-items-center{
     align-items: center;
 }
@@ -113,6 +114,9 @@ h6, .h6{
     }
     .d-none-md{
         display: none;
+    }
+    .flex-nowrap-md{
+        flex-wrap: nowrap;
     }
     .flex-direction-column-md{
         flex-direction: column;
@@ -153,11 +157,11 @@ h6, .h6{
 .w-100{
     width: 100%;
 }
-
-@media(max-width:576px) {
-    .w-100-sm{
-    width: 100%;
-    }
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
 }
 
 /* padding*/
@@ -262,6 +266,7 @@ h6, .h6{
 }
 
 /* margin */
+
 .mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -277,6 +282,10 @@ h6, .h6{
 .mx-l{
     margin-left: 24px;
     margin-right: 24px;
+}
+.my-xs{
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 .my-5xl{
     margin-top: 64px;
