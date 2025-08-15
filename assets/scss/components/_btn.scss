@@ -1,5 +1,5 @@
 /* btn */
-.btn{
+.btn {
     padding: 12px 24px;
     border-radius: $radius-sm;
     color: $color-neutral-900;
@@ -13,89 +13,120 @@
 }
 
 
-.btn-primary-filled{
+.btn-primary-filled {
     background-color: $color-primary-300;
+
+    &:hover {
+        color: $color-primary-500 ;
+    }
+
+    &:focus {
+        box-shadow: 0px 0px 0px 3px rgba($color-primary-300, 0.4);
+    }
 }
-.btn-neutral-filled{
+
+.btn-neutral-filled {
     background-color: $color-neutral-900;
     color: $color-neutral-0;
 }
-.btn-neutral-filled:hover, .btn-neutral-outlined:hover{
+
+.btn-neutral-filled:hover,
+.btn-neutral-outlined:hover {
     background-color: $color-neutral-700;
     color: $color-neutral-0;
 }
-.btn-neutral-filled:focus, .btn-neutral-outlined:focus{
+
+.btn-neutral-filled:focus,
+.btn-neutral-outlined:focus {
     box-shadow: 0 0 0 3px #21252910;
 }
-.btn-neutral-outlined{
-    border:1px solid $color-neutral-900;
-}
-.option-text-only{
-    border:1px solid $color-neutral-300;
-}
-.option-text-only:hover{
-    border:1px solid $color-neutral-600;
-}
-.option-text-only:focus{
-    border:1px solid $color-neutral-900;
-}
 
-.option-img-n-text{
-    border: none;
-    background-color: transparent;
-}
-.option-img-n-text:hover img, .card-product img{
-    opacity: 0.8;
-}
-.option-img-n-text:focus img{
+.btn-neutral-outlined {
     border: 1px solid $color-neutral-900;
 }
-.option-img-n-text:focus{
-    color: $color-neutral-900;
+
+.option-text-only {
+    border: 1px solid $color-neutral-300;
+
+    &:hover {
+        border: 1px solid $color-neutral-600;
+    }
+
+    &:focus {
+        border: 1px solid $color-neutral-900;
+    }
 }
+
+.option-img-n-text {
+    border: none;
+    background-color: transparent;
+
+    &:focus {
+        color: $color-neutral-900;
+    }
+
+    &:focus img {
+        border: 1px solid $color-neutral-900;
+    }
+
+}
+
+.option-img-n-text:hover img,
+.card-product:hover img {
+    opacity: 0.8;
+}
+
+
 @media(max-width:576px) {
-    .btn-sm{
-    padding: 8px 12px;
+    .btn-sm {
+        padding: 8px 12px;
     }
 }
 
 
 /* link */
-.link-primary{
+.link-primary {
     color: $color-primary-400;
     padding-top: 8px;
     padding-bottom: 8px;
 
-    span{
-    border-bottom: 1px solid;
+    span {
+        border-bottom: 1px solid;
     }
 
-    &:hover{
-    color: $color-primary-500;
+    &:hover {
+        color: $color-primary-500;
     }
 
-    &:focus span{
-    border-bottom: 2px solid;
+    &:focus span {
+        border-bottom: 2px solid;
     }
 
-    &:disabled{
-    opacity: 40%;
+    &:disabled {
+        opacity: 40%;
     }
 }
 
 /* disabled btn */
-.btn:disabled,.btn[disabled],
-.btn-sm:disabled, .btn-sm[disabled],
-.btn-neutral-outlined:disabled, .btn-neutral-outlined[disabled],
-.option-text-only:disabled, .option-text-only[disabled],
-.option-img-n-text:disabled, .option-img-n-text[disabled]{
-  cursor: not-allowed;
-  opacity: 0.5;
-  pointer-events: none;
+.btn:disabled,
+.btn[disabled],
+.btn-sm:disabled,
+.btn-sm[disabled],
+.btn-neutral-outlined:disabled,
+.btn-neutral-outlined[disabled],
+.option-text-only:disabled,
+.option-text-only[disabled],
+.option-img-n-text:disabled,
+.option-img-n-text[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
 }
-.btn:disabled:hover, .btn-sm:disabled:hover, 
+
+.btn:disabled:hover,
+.btn-sm:disabled:hover,
 .btn-neutral-outlined:disabled:hover,
 .option-text-only:disabled:hover,
 .option-img-n-text:disabled:hover {
-  background-color: transparent;
+    background-color: transparent;
 }

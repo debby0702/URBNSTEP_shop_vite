@@ -16,6 +16,10 @@
 .product-tag {
   position: relative;
 
+  &:hover img{
+    opacity: 0.7;
+  }
+
   .product-tag-text {
     position: absolute;
     left: 0;
@@ -64,6 +68,7 @@
     // 文字寬634px/2 + 間距32 + 圖48px
     left: calc(50% - 397px);
   }
+
   .sparkle-img {
     position: absolute;
     width: 76px;
@@ -91,25 +96,58 @@
     overflow: hidden;
 
     .star-img {
-    top: 32px;
-    left: -20px;
+      top: 32px;
+      left: -20px;
     }
+
     .sparkle-img {
-    bottom: 104px;
-    right: -28px;
+      bottom: 104px;
+      right: -28px;
     }
   }
 }
 
-.wrap{
-  .wrap-text{
-    background-color: $color-neutral-200, 0.2;
-    z-index: 10;
+.mask-card {
+  a {
+    position: relative;
+  }
+
+  .mask-text {
+    background-color: rgb(#000, 0.4);
+    color: $color-neutral-0;
     position: absolute;
+    // 整張都要黑底 mask，定位都用 0
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  &:hover .mask-text .h3{
+    color: $color-primary-300;
+  }
+}
 
+.inspiration {
+
+  .inspiration-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+
+    .col-4,
+    .col-6,
+    .col-12 {
+      padding: 4px;
+      overflow: hidden;
+    }
+    img:hover{
+      transform: scale(1.2);
+      transition: all .5s ease;
+    }
+
+  }
 }
