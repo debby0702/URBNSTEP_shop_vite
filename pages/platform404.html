@@ -9,159 +9,170 @@
   <body>
     <%- include('./layout/nav'); -%>
     <main class="main">
-        <section class="container-lg">
-            <div class="product-detail row mb-5xl">
-                <div class="col-7">
-                    <div class="row">
-                        <div class="col-6 mb-xs"><img
-                                src="../assets/images/products/image.png"
-                                alt="platform404產品圖"></div>
-                        <div class="col-6 mb-xs"><img
-                                src="../assets/images/products/image-1.png"
-                                alt="platform404產品圖"></div>
-                        <div class="col-6 mb-xs"><img
-                                src="../assets/images/products/image-2.png"
-                                alt="platform404產品圖"></div>
-                        <div class="col-6 mb-xs"><img
-                                src="../assets/images/products/image-3.png"
-                                alt="platform404產品圖"></div>
-                        <div class="col-6 mb-xs"><img
-                                src="../assets/images/products/image-4.png"
-                                alt="platform404產品圖"></div>
-                        <div class="col-6 mb-xs"><img
-                                src="../assets/images/products/image-5.png"
-                                alt="platform404產品圖"></div>
-                        <div class="col-6"><img
-                                src="../assets/images/products/image-6.png"
-                                alt="platform404產品圖"></div>
-                        <div class="col-6"><img
-                                src="../assets/images/products/image-7.png"
-                                alt="platform404產品圖"></div>
-                    </div>
-                </div>
-                <div class="col-5">
-                    <nav class="breadcrumb px-s font-label-md mb-s">
-                        <ol class="breadcrumb-ol d-flex">
-                            <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="./index.html">首頁</a></li>
-                            <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="javascript:;">女鞋</a></li>
-                            <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="javascript:;">滑板鞋</a></li>
-                            <li class="breadcrumb-item current-page">Platform404</li>
-                        </ol>
-                    </nav>
-                    <div class="mb-xl">
-                        <h1 class="h2 mb-m">Plateform 404</h1>
-                        <h5 class="price color-primary-400 mb-m">NT$2,600<s
-                                class="color-neutral-500 font-p-sm ms-xs d-inline-block">NT$3,200</s></h5>
-                        <p class="mb-s">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
-                        <p>
-                            鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
-                    </div>
-                    <div class="mb-xl">
-                        <div class="font-p-md mb-xs">顏色</div>
-                        <ul class="d-flex  text-align-center">
-                            <li class="me-xs">
-                                <button type="button" class="option-img-n-text color-neutral-600">
-                                    <img class="mb-xxs" width="64" height="auto" src="../assets/images/products/product.png" alt="Platform404 藍色">
-                                    <p class="font-label-md ">藍色</p>
-                                </button>
-                            </li>
-                            <li>
-                                <button type="button" class=" option-img-n-text color-neutral-600 ">
-                                    <img class="mb-xxs" width="64" height="auto" src="../assets/images/products/product-1.png" alt="Platform404 卡其色">
-                                    <p class="font-label-md ">卡其色</p>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="mb-3xl">
-                        <div class="font-p-md mb-xs">尺寸</div>
-                        <ul class="d-flex flex-wrap">
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only">35(22.5cm)</button>
-                            </li>
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only">36(23.0cm)</button>
-                            </li>
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only">37(23.5cm)</button>
-                            </li>
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only">38(24.0cm)</button>
-                            </li>
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only">39(24.5cm)</button>
-                            </li>
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only">40(25.0cm)</button>
-                            </li>
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only">41(26.0cm)</button>
-                            </li>
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only" disabled>42(26.5cm)</button>
-                            </li>
-                            <li class="me-xs mb-xs">
-                                <button type="button" class="btn option-text-only" disabled>43(27.0cm)</button>
-                            </li>
-                        </ul>
-                        <p class="font-p-sm color-danger-300">僅剩 3 雙</p>
-                    </div>
-                    <div class="mb-xl">
+        <section>
+            <div class="mb-l d-none d-block-md"><img
+                                    src="../assets/images/products/image.png"
+                                    alt="platform404產品圖"></div>
+            <div class="container-lg">
+                <div class="product-detail row mb-5xl">
+                    <div class="col-7 d-none-md">
                         <ul class="row">
-                            <li class="col-6"><button class="btn btn-neutral-outlined font-label-md" type="button"><i class="bi bi-heart me-xs"></i> 加入收藏</button></li>
-                            <li class="col-6"><button class="btn btn-neutral-filled font-label-md" type="button"><i class="bi bi-handbag me-xs"></i>門市預約試穿</button></li>
+                            <li class="col-6 mb-xs"><img
+                                    src="../assets/images/products/image.png"
+                                    alt="platform404產品圖"></li>
+                            <li class="col-6 mb-xs"><img
+                                    src="../assets/images/products/image-1.png"
+                                    alt="platform404產品圖"></li>
+                            <li class="col-6 mb-xs"><img
+                                    src="../assets/images/products/image-2.png"
+                                    alt="platform404產品圖"></li>
+                            <li class="col-6 mb-xs"><img
+                                    src="../assets/images/products/image-3.png"
+                                    alt="platform404產品圖"></li>
+                            <li class="col-6 mb-xs"><img
+                                    src="../assets/images/products/image-4.png"
+                                    alt="platform404產品圖"></li>
+                            <li class="col-6 mb-xs"><img
+                                    src="../assets/images/products/image-5.png"
+                                    alt="platform404產品圖"></li>
+                            <li class="col-6"><img
+                                    src="../assets/images/products/image-6.png"
+                                    alt="platform404產品圖"></li>
+                            <li class="col-6"><img
+                                    src="../assets/images/products/image-7.png"
+                                    alt="platform404產品圖"></li>
                         </ul>
                     </div>
-                    <div class="py-s line-b">
-                        <p class="font-label-md mb-xxs">商品材質</p>
-                        <ul class="font-p-md color-neutral-600">
-                            <li>鞋面：合成皮革（Synthetic Leather）</li>
-                            <li>內裡：透氣網布材質，提升舒適與排汗性</li>
-                            <li>鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</li>
-                            <li>鞋帶：聚酯纖維，耐拉扯不易鬆脫</li>
-                        </ul>
-                    </div>
-                    <div class="py-s line-b">
-                        <p class="font-label-md mb-xxs">購買須知</p>
-                        <p class="font-p-md color-neutral-600">商品顏色因螢幕顯示可能略有差異，請以實品為準。</p>
-                        <p class="font-p-md color-neutral-600">建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</p>
-                        <p class="font-p-md color-neutral-600">本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
-                    </div>
-                    <div class="py-s line-b">
-                        <p class="font-label-md mb-xxs">保養方式</p>
-                        <p class="font-p-md color-neutral-600">建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</p>
-                        <p class="font-p-md color-neutral-600">收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。</p>
-                        <p class="font-p-md color-neutral-600">若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
+                    <div class="col-5">
+                        <nav class="breadcrumb  font-label-md font-label-sm-md mb-s mb-xs-md ">
+                            <ol class="breadcrumb-ol d-flex">
+                                <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="./index.html">首頁</a></li>
+                                <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="javascript:;">女鞋</a></li>
+                                <li class="breadcrumb-item"><a class="breadcrumb-item-link" href="javascript:;">滑板鞋</a></li>
+                                <li class="breadcrumb-item current-page">Platform404</li>
+                            </ol>
+                        </nav>
+                        <div class="mb-xl">
+                            <h1 class="h2 mb-m mb-s-md">Plateform 404</h1>
+                            <h5 class="price color-primary-400 mb-m mb-s-md">NT$2,600<s
+                                    class="color-neutral-500 font-p-sm ms-xs d-inline-block">NT$3,200</s></h5>
+                            <p class="mb-s">Platform 404 以柔和奶白為底，搭配深藍色皮革點綴，走在街上自帶回頭率。鞋型採用復古運動風輪廓，結合輕量厚底與柔軟泡棉鞋舌，兼顧美感與舒適。</p>
+                            <p>
+                                鞋身選用柔軟皮革材質，打造出清新卻不失個性的氛圍，並以鞋面透氣孔設計提升穿著體驗，兼顧質感與舒適度，適合日常長時間著用。無論是街頭穿搭、日常通勤或週末出遊都能輕鬆駕馭。</p>
+                        </div>
+                        <div class="mb-xl mb-l-md">
+                            <div class="font-p-md mb-xs">顏色</div>
+                            <ul class="d-flex  text-align-center">
+                                <li class="me-xs">
+                                    <button type="button" class="option-img-n-text color-neutral-600">
+                                        <img class="mb-xxs" width="64" height="auto" src="../assets/images/products/product.png" alt="Platform404 藍色">
+                                        <p class="font-label-md ">藍色</p>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class=" option-img-n-text color-neutral-600 ">
+                                        <img class="mb-xxs" width="64" height="auto" src="../assets/images/products/product-1.png" alt="Platform404 卡其色">
+                                        <p class="font-label-md ">卡其色</p>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mb-3xl">
+                            <div class="font-p-md mb-xs">尺寸</div>
+                            <ul class="d-flex flex-wrap">
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only">35(22.5cm)</button>
+                                </li>
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only">36(23.0cm)</button>
+                                </li>
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only">37(23.5cm)</button>
+                                </li>
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only">38(24.0cm)</button>
+                                </li>
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only">39(24.5cm)</button>
+                                </li>
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only">40(25.0cm)</button>
+                                </li>
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only">41(26.0cm)</button>
+                                </li>
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only" disabled>42(26.5cm)</button>
+                                </li>
+                                <li class="me-xs mb-xs">
+                                    <button type="button" class="btn option-text-only" disabled>43(27.0cm)</button>
+                                </li>
+                            </ul>
+                            <p class="font-p-sm color-danger-300">僅剩 3 雙</p>
+                        </div>
+                        <div class="mb-xl">
+                            <!-- desktop -->
+                            <ul class="row d-none-md">
+                                <li class="col-6"><button class="w-100 btn btn-neutral-outlined font-label-md " type="button"><i class="bi bi-heart me-xs h5"></i> 加入收藏</button></li>
+                                <li class="col-6"><button class="w-100 btn btn-neutral-filled font-label-md" type="button"><i class="bi bi-handbag me-xs h5"></i>門市預約試穿</button></li>
+                            </ul>
+                            <!-- mobile -->
+                            <ul class="d-none d-flex-md justify-content-center align-items-center">
+                                <li class="flex-1 me-xs"><button class="w-100 btn btn-neutral-filled font-label-md" type="button"><i class="bi bi-handbag me-xs h5"></i>門市預約試穿</button></li>
+                                <li class=""><button class="font-label-md btn-icon" type="button"><i class="bi bi-heart h4"></i></button></li>
+                            </ul>
+                        </div>
+                        <div class="py-s line-b">
+                            <p class="font-label-md mb-xxs">商品材質</p>
+                            <ul class="font-p-md color-neutral-600">
+                                <li>鞋面：合成皮革（Synthetic Leather）</li>
+                                <li>內裡：透氣網布材質，提升舒適與排汗性</li>
+                                <li>鞋底：EVA 輕量發泡橡膠，具備良好緩震與止滑效果</li>
+                                <li>鞋帶：聚酯纖維，耐拉扯不易鬆脫</li>
+                            </ul>
+                        </div>
+                        <div class="py-s line-b">
+                            <p class="font-label-md mb-xxs">購買須知</p>
+                            <p class="font-p-md color-neutral-600">商品顏色因螢幕顯示可能略有差異，請以實品為準。</p>
+                            <p class="font-p-md color-neutral-600">建議首次穿著前試穿確認尺寸，避免影響退換貨權益。</p>
+                            <p class="font-p-md color-neutral-600">本商品為限量發售，庫存有限，如需更換尺寸請儘早聯繫客服協助處理。</p>
+                        </div>
+                        <div class="py-s line-b">
+                            <p class="font-label-md mb-xxs">保養方式</p>
+                            <p class="font-p-md color-neutral-600">建議以乾布或微濕軟布擦拭表面汙漬，避免機洗或長時間浸水。</p>
+                            <p class="font-p-md color-neutral-600">收納時請放置於乾燥通風處，避免日曬及高溫導致變形或龜裂。</p>
+                            <p class="font-p-md color-neutral-600">若需深層清潔，建議使用中性清潔劑並搭配柔刷輕刷，勿使用漂白水或強酸強鹼清潔劑。</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="best-seller">
-            <div class="container-lg py-3xl">
+            <div class="container-lg py-3xl py-2xl-md mb-2xl mb-l-md">
                 <h4 class="mb-m">你可能也喜歡...</h4>
-                <ul class="row">
-                    <li class="col-3">
+                <ul class="row row-6px-md flex-nowrap-md overflow-x-auto-md">
+                    <li class="col-3 overflow-x-auto-item-md">
                         <a class="option-img-n-text" href="javascript:;">
                             <img class="mb-s" src="../assets/images/products/product-2.png" alt="VM001">
                             <h6 class="mb-xxs">VM001</h6>
                             <p class="font-labe-md ">NT$2,600</p>
                         </a>
                     </li>
-                    <li class="col-3">
+                    <li class="col-3 overflow-x-auto-item-md">
                         <a class="option-img-n-text" href="javascript:;">
                             <img class="mb-s" src="../assets/images/products/product-3.png" alt="Melty Kiss">
                             <h6 class="mb-xxs">Melty Kiss</h6>
                             <p class="font-labe-md ">NT$4,000</p>
                         </a>
                     </li>
-                    <li class="col-3">
+                    <li class="col-3 overflow-x-auto-item-md">
                         <a class="option-img-n-text" href="javascript:;">
                             <img class="mb-s" src="../assets/images/products/product-4.png" alt="Sugar Snap">
                             <h6 class="mb-xxs">Sugar Snap</h6>
                             <p class="font-labe-md ">NT$3,200</p>
                         </a>
                     </li>
-                    <li class="col-3">
+                    <li class="col-3 overflow-x-auto-item-md">
                         <a class="option-img-n-text" href="javascript:;">
                             <img class="mb-s" src="../assets/images/products/product-5.png" alt="VM001">
                             <h6 class="mb-xxs">VM001</h6>

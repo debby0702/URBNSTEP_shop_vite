@@ -1,10 +1,15 @@
 // base 放標籤基本樣式
-body {
+body, button {
     font-family: "Noto Sans TC", sans-serif;
     line-height: 1.5;
     letter-spacing: 0.05em;
     color: $color-neutral-900;
     /* 預設就是fw400 */
+}
+
+// 清除預設空間
+button{
+    padding: 0;
 }
 
 /* 補充reset */

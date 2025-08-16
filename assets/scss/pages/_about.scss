@@ -1,32 +1,34 @@
 .banner-about {
-    background-image: url(../assets/images/about/hero.png);
+    // 路徑需省略 assets，不然 編譯後會找不到圖
+    background-image: url(../images/about/hero.png);
 
-    .h1{
-    padding: 150px 0;
-    color: $color-neutral-0;
-}
-}
-
-@media(max-width:767px) {
-    .banner-about{
-        background-image: url(../assets/images/about/hero-sm.png);
+    .h1 {
+        padding: 150px 0;
+        color: $color-neutral-0;
     }
 }
 
-.block-quote{
+@media(max-width:767px) {
+    .banner-about {
+        // 路徑需省略 assets，不然 編譯後會找不到圖
+        background-image: url(../images/about/hero-sm.png);
+    }
+}
+
+.block-quote {
     border-radius: $radius-md;
 }
 
 
-.history-list{
+.history-list {
     list-style: disc;
-    
-    time{
-    border-right: 1px solid $color-neutral-900;
+
+    time {
+        border-right: 1px solid $color-neutral-900;
     }
 }
 
 
-.brand-concept-list li{
+.brand-concept-list li {
     border-left: 3px solid $color-neutral-300;
 }

@@ -5,9 +5,7 @@
 .sidebar-menu .active{
     color: $color-primary-400;
 }
-.products .title{
-    margin-bottom: 24px;
-}
+
 .products .card{
     color: $color-neutral-900;
 }
@@ -38,4 +36,19 @@
 .product-detail .row{
     margin-left: -4px;
     margin-right: -4px;
+}
+
+@media(max-width:767px) {
+  .product-tag-row-md {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .overflow-x-auto-item-md {
+    // 圖片最小寬是300px+間距16
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
 }

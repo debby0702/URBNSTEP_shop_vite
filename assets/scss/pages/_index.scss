@@ -1,22 +1,11 @@
 //新品上市
-@media(max-width:767px) {
-  .row-6px-md {
-    margin-left: -6px;
-    margin-right: -6px;
-  }
 
-  .col-6-md {
-    width: 50%;
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-}
 
 // 熱銷補貨
 .product-tag {
   position: relative;
 
-  &:hover img{
+  &:hover img {
     opacity: 0.7;
   }
 
@@ -45,7 +34,8 @@
 
 // banner
 .banner-index {
-  background-image: url(../assets/images/index/banner.png);
+  // 路徑需省略 assets，不然 編譯後會找不到圖
+  background-image: url(../images/index/banner.png);
   height: calc(100vh - 80px);
   padding-left: 200px;
 
@@ -55,7 +45,8 @@
 }
 
 .banner-co-branded {
-  background-image: url(../assets/images/index/banner-co-branded.png);
+  // 路徑需省略 assets，不然 編譯後會找不到圖
+  background-image: url(../images/index/banner-co-branded.png);
   padding: 100px 0;
   position: relative;
 
@@ -81,7 +72,7 @@
 
 @media(max-width:767px) {
   .banner-index {
-    background-image: url(../assets/images/index/banner-sm.png);
+    background-image: url(../images/index/banner-sm.png);
     height: calc(100vh - 120px);
     padding-left: 24px;
 
@@ -91,7 +82,7 @@
   }
 
   .banner-co-branded {
-    background-image: url(../assets/images/index/banner-co-branded-sm.png);
+    background-image: url(../images/index/banner-co-branded-sm.png);
     // 定位圖片超出去要隱藏(避免出現x軸)
     overflow: hidden;
 
@@ -122,18 +113,20 @@
     left: 0;
     right: 0;
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  &:hover .mask-text .h3{
+
+  &:hover .mask-text .h3 {
     color: $color-primary-300;
   }
 }
 
 .inspiration {
 
-  .inspiration-row {
+  &-row {
     display: flex;
     flex-wrap: wrap;
     margin: -4px;
@@ -142,12 +135,29 @@
     .col-6,
     .col-12 {
       padding: 4px;
-      overflow: hidden;
     }
-    img:hover{
-      transform: scale(1.2);
-      transition: all .5s ease;
+  }
+}
+
+@media(max-width:767px) {
+  .inspiration {
+
+
+    img {
+      // 圖片最小寬是300px+間距16
+      min-width: 316px;
     }
 
+    .inspiration-row {
+      flex-wrap: nowrap;
+      margin: 0 -8px;
+
+      .col-4,
+      .col-6,
+      .col-12 {
+        padding: 0 8px;
+
+      }
+    }
   }
 }
